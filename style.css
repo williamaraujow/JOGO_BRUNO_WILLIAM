@@ -24,3 +24,38 @@ body {
     justify-content: center;
     align-items: center;
   }
+  
+  .btn {
+    border: 5px solid #26e5af;
+    background-color: #34495e;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px
+  }
+  
+  .game > div.winner {
+    background: red;
+  }
+  
+  .game > div.winner > span {
+    color: green;
+  }
+  
+  @media (min-width: 600px) {
+    .game {
+      width: 600px;
+      height: 600px;
+      border-radius: 10px;
+      border: 6px solid #26e5af;
+    }
+  
+    .game>div {
+      border-radius: 2px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .btn {
+      cursor: pointer
+    }
+  }
